@@ -18,7 +18,7 @@ gray = cv2.cvtColor(imgBruit, cv2.COLOR_BGR2GRAY)
 
 opt2, bruitOtsu = cv2.threshold(gray, 0, 255, cv2.THRESH_OTSU)
 
-# ------ DISPLAY --------#
+# ------ DISPLAY RESULTS --------#
 
 plt.figure(figsize=(12, 8))
 plt.subplot(1, 4, 1)
@@ -38,6 +38,3 @@ plt.title('Seuil Otsu')
 plt.imshow(bruitOtsu, cmap='gray')
 
 plt.show()
-
-print(opt1)
-print(opt2)
